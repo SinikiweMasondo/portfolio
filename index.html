@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinikiwe Masondo — Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Sinikiwe Masondo</div>
+            <div class="nav-links">
+                <button id="scroll-to-home">HOME</button>
+                <button id="scroll-to-about">ABOUT ME</button>
+                <button id="scroll-to-skills">SKILLS</button>
+                <button id="scroll-to-projects">PROJECTS</button>
+                <button id="scroll-to-contact">CONTACT</button>
+            </div>
+            <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <h1>Hi, I am <span class="highlight">Sinikiwe Masondo.</span></h1>
+            <p>An IT Practitioner specializing in System Development.</p>
+            <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                <button id="scroll-to-projects-hero" class="btn">View My Work</button>
+                <button id="scroll-to-contact-hero" class="btn">Get In Touch</button>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="about-container">
+                
+                <div class="about-bio">
+                    <h2>ABOUT ME</h2>
+                    <p class="tagline"><strong>Aspiring Software Developer</strong> turning complex requirements into practical solutions.</p>
+                    
+                    <p>I’m currently in my second year of System Development at Gauteng City College, driven by a deep curiosity to understand how technology works and how it can be used to make a meaningful difference.</p>
+                    
+                    <p>I approach technical bottlenecks by breaking complex requirements down into manageable components, prioritizing clean logic, clear communication, and structured problem-solving.</p>
+                    
+                    <div class="project-highlight">
+                        <h3>Academic Highlight</h3>
+                        <p>Developed a <strong>Java Swing Data Validation System</strong>. This project applied strict input-validation rules and conditional logic to guarantee user-data accuracy, refining my understanding of user input handling and edge-case error recovery.</p>
+                    </div>
+                </div>
+
+                <div class="about-skills-snapshot">
+                    <h3>Core Tech Stack</h3>
+                    <div class="skills-snapshot-grid">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">HTML & CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">System Analysis</span>
+                    </div>
+                    
+                    <div class="about-cta-group">
+                        <button id="scroll-to-projects-about" class="btn">Explore Portfolio</button>
+                        <button id="scroll-to-contact-about" class="btn btn-alt">Let's Connect</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <h2>TECHNICAL SKILLS</h2>
+            <ul class="skills-list">
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>C++</li>
+                <li>Java</li>
+                <li>SQL</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2>MY PROJECTS</h2>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <h3>Data Validation System</h3>
+                    <p>A desktop application that applies strict input-validation rules and conditional logic to guarantee user-data accuracy, with clear error recovery for edge cases.</p>
+                    <div class="project-tags">
+                        <span>Java</span>
+                        <span>Swing</span>
+                    </div>
+                    <a href="https://github.com/SinikiweMasondo/REPO-NAME-1" target="_blank" rel="noopener" class="btn project-btn">View Code</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>The responsive single-page site you are on right now, with smooth scrolling, a light and dark theme that remembers your choice, and a validated contact form. Built with no frameworks.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="https://github.com/SinikiweMasondo/REPO-NAME-2" target="_blank" rel="noopener" class="btn project-btn">View Code</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>More On The Way</h3>
+                    <p>I am always building and learning. New projects in Java, C++, SQL and web development are added to my GitHub as I complete them.</p>
+                    <div class="project-tags">
+                        <span>Java</span>
+                        <span>C++</span>
+                        <span>SQL</span>
+                    </div>
+                    <a href="https://github.com/SinikiweMasondo" target="_blank" rel="noopener" class="btn project-btn">Visit My GitHub</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>CONTACT ME</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">NAME:</label>
+                    <input type="text" id="name" placeholder="Enter Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">EMAIL:</label>
+                    <input type="email" id="email" placeholder="Enter Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">MESSAGE:</label>
+                    <textarea id="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">SEND MESSAGE</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sinikiwe Masondo. All Rights Reserved.</p>
+        <p id="footer-fun" class="footer-fun" tabindex="0" role="button" aria-label="Show another line"></p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
